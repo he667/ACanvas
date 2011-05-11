@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:background="@drawable/bbd"
+	>
+	<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+			android:orientation="vertical"
+		>
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+		<ImageView style="@style/TitleBarLogo" ></ImageView>
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+		<Button style="@style/HomeButton"
+				android:id="@+id/home_btn_couleurs"
+                android:onClick="onCouleurs"
+                android:text="@string/couleurs"
+                android:drawableTop="@drawable/aacolors"
+                >
+        </Button> 
+		<Button
+				style="@style/HomeButton" 
+				android:id="@+id/home_btn_typo"
+                android:onClick="onTypographie"
+                android:text="@string/typographie"
+                android:drawableTop="@drawable/aatext">
+        </Button>
+	</LinearLayout>
+		
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+		<Button 
+				style="@style/HomeButton"
+				android:id="@+id/home_btn_taille"
+                android:onClick="onTaille"
+                android:text="@string/tailles"
+                android:drawableTop="@drawable/aaspotlight">
+        </Button>
+		<Button 
+				style="@style/HomeButton"
+				android:id="@+id/home_btn_decalage"
+                android:onClick="onDecalages"
+                android:text="@string/decalages"
+                android:drawableTop="@drawable/aalanguage">
+        </Button>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+		<Button 
+				style="@style/HomeButton"
+				android:id="@+id/home_btn_couleurs"
+                android:onClick="onVariations"
+                android:text="@string/variations"
+                android:drawableTop="@drawable/aaoptions">
+        </Button>
+		<Button 
+				style="@style/HomeButton"
+				android:id="@+id/home_btn_typo"
+                android:onClick="onReinitialiser"
+                android:text="@string/reinitialiser"
+                android:drawableTop="@drawable/aareinit">
+        </Button>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+		<Button 
+				style="@style/HomeButton"
+				android:id="@+id/home_btn_couleurs"
+                android:onClick="on3D"
+                android:text="@string/t3D"
+                android:drawableTop="@drawable/aa3d">
+        </Button>
+		<Button 
+				style="@style/HomeButton"
+				android:id="@+id/home_btn_typo"
+                android:onClick="onFont"
+                android:text="@string/font"
+                android:drawableTop="@drawable/aastyle">
+        </Button>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+		<Button 
+				style="@style/HomeButton"
+				android:id="@+id/home_btn_couleurs"
+                android:onClick="onPosition"
+                android:text="@string/tPosition"
+                android:drawableTop="@drawable/aa3d">
+        </Button>
+		<Button 
+				style="@style/HomeButton"
+				android:id="@+id/home_btn_typo"
+                android:onClick="onBackground"
+                android:text="@string/tBackground"
+                android:drawableTop="@drawable/aastyle">
+        </Button>
+	</LinearLayout>
+	
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/bbd"
+>
+	<LinearLayout
+		android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center_horizontal"
+	>
+		<ImageView
+			android:id="@+id/RenderingPreview"
+			android:layout_width="480px"
+			android:layout_height="100px"
+		></ImageView>
+
+
+		<TableLayout
+			android:id="@+id/TableLayout02"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn"
+		>
+			<TableRow>
+				<TextView
+					android:text="Element :"
+					android:id="@+id/TextView"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+				></TextView>
+				<TextView
+					android:text="Heure"
+					android:id="@+id/TextViewPositionElement"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+				></TextView>
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:text="Positionnement :"
+					android:id="@+id/TextView"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+				></TextView>
+				<TextView
+					android:text="Defaut"
+					android:id="@+id/TextViewPositionnement"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+				></TextView>
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:text="Position X : "
+					android:id="@+id/TextView"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					
+				></TextView>
+				<TextView
+					android:text="0"
+					android:id="@+id/TextViewPositionX"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+				></TextView>
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:text="Positon Y : "
+					android:id="@+id/TextView"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+				></TextView>
+				<TextView
+					android:text="0"
+					android:id="@+id/TextViewPositionY"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+				></TextView>
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:text="Alignement : "
+					android:id="@+id/TextView"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+				></TextView>
+				<TextView
+					android:text="Centre"
+					android:id="@+id/TextViewAlignement"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+				></TextView>
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:text="Line : "
+					android:id="@+id/TextView"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+				></TextView>
+				<TextView
+					android:text="First"
+					android:id="@+id/TextViewLine"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+				></TextView>
+			</TableRow>
+		</TableLayout>
+
+
+		<TableLayout
+			android:id="@+id/TableLayout01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn"
+		>
+			<TableRow
+				android:layout_width="wrap_content"
+			>
+				<ImageButton
+					android:id="@+id/previous"
+					android:background="@drawable/elleft"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:onClick="onPrevious" />
+				<ImageView
+					android:id="@+id/Dummy"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				></ImageView>
+
+				<ImageButton
+					android:id="@+id/PositionButtonUp"
+					android:background="@drawable/flup"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<ImageView
+					android:id="@+id/Dummy"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				></ImageView>
+
+				<ImageButton
+					android:id="@+id/next"
+					android:background="@drawable/elright"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:onClick="onNext" />
+			</TableRow>
+			<TableRow
+				android:layout_width="wrap_content"
+			>
+				<ImageView
+					android:id="@+id/Dummy"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				></ImageView>
+				<ImageButton
+					android:id="@+id/PositionButtonLeft"
+					android:background="@drawable/flleft"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:onClick="onLeft" />
+				<ImageView
+					android:id="@+id/Dummy"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				></ImageView>
+				<ImageButton
+					android:id="@+id/PositionButtonRight"
+					android:background="@drawable/flright"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:onClick="onRight" />
+				<ImageView
+					android:id="@+id/Dummy"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				></ImageView>
+
+			</TableRow>
+			<TableRow>
+				<ImageView
+					android:id="@+id/Dummy"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				></ImageView>
+
+				<ImageView
+					android:id="@+id/Dummy"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				></ImageView>
+				<ImageButton
+					android:id="@+id/PositionButtonDown"
+					android:background="@drawable/fldown"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:onClick="onDown" />
+				<ImageView
+					android:id="@+id/Dummy"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				></ImageView>
+				<ImageView
+					android:id="@+id/Dummy"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				></ImageView>
+
+			</TableRow>
+		</TableLayout>
+
+		<LinearLayout
+			android:id="@+id/LinearLayout01"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+		>
+			<Button
+				style="@style/ButtonSelect"
+				android:text="@string/btposline"
+				android:id="@+id/BTPOSLINE"
+				android:onClick="onPositionnementLine"
+				android:layout_width="wrap_content"
+			></Button>
+			<Button
+				style="@style/ButtonSelect"
+				android:text="@string/btposposition"
+				android:id="@+id/BTPOSPOS"
+				android:onClick="onPositionnementPosition"
+				android:layout_width="wrap_content"
+			></Button>
+			<Button
+				style="@style/ButtonSelect"
+				android:text="@string/btposalignement"
+				android:id="@+id/BTPOSALI"
+				android:onClick="onPositionnementAlignement"
+				android:layout_width="wrap_content"
+			></Button>
+		</LinearLayout>
+
+
+	</LinearLayout>
+</LinearLayout>

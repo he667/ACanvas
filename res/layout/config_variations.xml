@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/bbd"
+>
+	<ScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+	>
+		<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+		>
+			<!-- LOGO -->
+			<ImageView
+				style="@style/TitleBarLogo"
+			></ImageView>
+
+			<!-- VARIATIONS -->
+			<Button
+				android:text="@string/btvaria"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/IV0001"
+				android:background="@drawable/variations"
+				android:textStyle="bold"
+				android:textSize="20dp"
+				android:textColor="#006600"
+				android:gravity="right|center_vertical"
+			></Button>
+			<Button
+				style="@style/ButtonSelect"
+				android:text="@string/btheures"
+				android:id="@+id/BVAH"
+			></Button>
+			<Button
+				style="@style/ButtonSelect"
+				android:text="@string/btseparateur"
+				android:id="@+id/BVAS"
+			></Button>
+			<Button
+				style="@style/ButtonSelect"
+				android:text="@string/btminutes"
+				android:id="@+id/BVAM"
+			></Button>
+			<Button
+				style="@style/ButtonSelect"
+				android:text="@string/btsemaine"
+				android:id="@+id/BVASE"
+			></Button>
+			<Button
+				style="@style/ButtonSelect"
+				android:text="@string/btjour"
+				android:id="@+id/BVAJO"
+			></Button>
+			<Button
+				style="@style/ButtonSelect"
+				android:text="@string/btmois"
+				android:id="@+id/BVAMS"
+			></Button>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:background="#FFFFFF"
+			>
+				<!-- android:background="@drawable/valider" -->
+				<Button
+					style="@style/HomeButtonMini"
+					android:text="@string/valider"
+					android:id="@+id/BVALIDER"
+				></Button>
+			</LinearLayout>
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="WHOOT (C) 2011 COM.YBI"
+				android:textSize="10dp"
+			></TextView>
+
+		</LinearLayout>
+
+	</ScrollView>
+</LinearLayout>

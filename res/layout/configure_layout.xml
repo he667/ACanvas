@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical"
+	>
+	<ImageView android:layout_width="fill_parent" android:layout_height="33pt" android:id="@+id/ImageView01"></ImageView>
+
+	<TableLayout 
+	android:id="@+id/TableLayout01" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+
+		<TableRow 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+			<ImageView android:layout_width="30pt" android:layout_height="28pt" android:id="@+id/ImageView01"></ImageView>
+			<ImageView android:layout_width="28pt" android:layout_height="28pt" android:id="@+id/IBTCOH"></ImageView>
+			<ImageView android:layout_width="42pt" android:layout_height="28pt" android:id="@+id/IBTCOS"></ImageView>
+			<ImageView android:layout_width="34pt" android:layout_height="28pt" android:id="@+id/IBTCOM"></ImageView>
+		</TableRow>
+		<TableRow 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+			<ImageView android:layout_width="28pt" android:layout_height="28pt" android:id="@+id/ImageView01"></ImageView>
+			<ImageView android:layout_width="28pt" android:layout_height="28pt" android:id="@+id/IBTTAH"></ImageView>
+			<ImageView android:layout_width="42pt" android:layout_height="28pt" android:id="@+id/IBTTAS" ></ImageView>
+			<ImageView android:layout_width="34pt" android:layout_height="28pt" android:id="@+id/IBTTAM"></ImageView>
+		
+</TableRow>
+		<TableRow 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+			<ImageView android:layout_width="28pt" android:layout_height="28pt" android:id="@+id/ImageView01"></ImageView>
+			<ImageView android:layout_width="28pt" android:layout_height="28pt" android:id="@+id/IBTDEH"></ImageView>
+			<ImageView android:layout_width="42pt" android:layout_height="28pt" android:id="@+id/IBTDES"></ImageView>
+			<ImageView android:layout_width="34pt" android:layout_height="28pt" android:id="@+id/IBTDEM"></ImageView>
+		
+</TableRow>
+		<TableRow 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+			<ImageView android:layout_width="30pt" android:layout_height="28pt" android:id="@+id/ImageView01"></ImageView>
+			<ImageView android:layout_width="28pt" android:layout_height="28pt" android:id="@+id/IBTTYH"></ImageView>
+			<ImageView android:layout_width="42pt" android:layout_height="28pt" android:id="@+id/IBTTYS" ></ImageView>
+			<ImageView android:layout_width="34pt" android:layout_height="28pt" android:id="@+id/IBTTYM"></ImageView>
+		
+</TableRow>
+	</TableLayout>
+
+		<LinearLayout 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+			<ImageView android:layout_width="30pt" android:layout_height="26pt" android:id="@+id/ImageView01"></ImageView>
+			<ImageView android:layout_width="110pt" android:layout_height="26pt" android:id="@+id/IBTOOM"></ImageView>
+		
+</LinearLayout>
+	
+		<LinearLayout 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+			<ImageView android:layout_width="40pt" android:layout_height="24pt" android:id="@+id/ImageView01"></ImageView>
+			<ImageView android:layout_width="46pt" android:layout_height="24pt" android:id="@+id/IBTVL"></ImageView>
+			<ImageView android:layout_width="44pt" android:layout_height="24pt" android:id="@+id/IBTRE"></ImageView>
+		</LinearLayout>
+	
+
+	
+
+</LinearLayout>

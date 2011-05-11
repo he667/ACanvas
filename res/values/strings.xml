@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string
+		name="app_name"
+	>WHOOT</string>
+
+	<string
+		name="choisir_couleur"
+	>
+		Choose Color
+	</string>
+	<string
+		name="choisir_font"
+	>
+		Choose Font
+	</string>
+	<string
+		name="choisir_decalage"
+	>Choose Offset
+	</string>
+	<string
+		name="choisir_direction"
+	>Choose Direction
+	</string>
+	<string
+		name="choisir_taille"
+	>Choose Size
+	</string>
+	<string
+		name="choisir_typo"
+	>Choose Typo
+	</string>
+	<string
+		name="choisir_varia"
+	>Choose Style
+	</string>
+	<string
+		name="choisir_custom"
+	>Enter your custom separator
+	</string>
+	<string
+		name="personnalise"
+	>Customize
+	</string>
+
+	<string
+		name="ok"
+	>Ok
+	</string>
+	<string
+		name="cancel"
+	>Cancel
+	</string>
+
+	<string
+		name="couleurs"
+	>Colors</string>
+	<string
+		name="typographie"
+	>Typography</string>
+	<string
+		name="decalages"
+	>Offset</string>
+	<string
+		name="tailles"
+	>Sizes</string>
+	<string
+		name="font"
+	>Fonts</string>
+	<string
+		name="t3D"
+	>3D</string>
+	<string
+		name="variations"
+	>Styles</string>
+	<string
+		name="reinitialiser"
+	>Reset</string>
+	<string
+		name="tBackground"
+	>Background Image</string>
+	<string
+		name="tPosition"
+	>Position</string>
+	<string
+		name="valider"
+	>Ok</string>
+	<string
+		name="annuler"
+	>Cancel</string>
+
+	<string
+		name="rotx"
+	>Horizontal Rotation </string>
+	<string
+		name="roty"
+	>Vertical Rotation </string>
+
+
+	<string-array
+		name="se"
+	>
+		<item>Sunday</item>
+		<item>Monday</item>
+		<item>Tuesday</item>
+		<item>Wednesday</item>
+		<item>Thursday</item>
+		<item>Friday</item>
+		<item>Saturday</item>
+	</string-array>
+	<string-array
+		name="hm"
+	>
+		<item>Midnight</item>
+		<item>One</item>
+		<item>Two</item>
+		<item>Three</item>
+		<item>Four</item>
+		<item>Five</item>
+		<item>Six</item>
+		<item>Seven</item>
+		<item>Eight</item>
+		<item>Nine</item>
+		<item>Ten</item>
+		<item>Eleven</item>
+		<item>Twelve</item>
+	</string-array>
+
+	<string-array
+		name="mm"
+	>
+		<item>Twenty</item>
+		<item>Thirty</item>
+		<item>Forty</item>
+		<item>Fifty</item>
+	</string-array>
+
+	<string-array
+		name="mn"
+	>
+		<item>
+		</item>
+		<item>One</item>
+		<item>Two</item>
+		<item>Three</item>
+		<item>Four</item>
+		<item>Five</item>
+		<item>Six</item>
+		<item>Seven</item>
+		<item>Eight</item>
+		<item>Nine</item>
+		<item>Ten</item>
+	</string-array>
+
+	<string-array
+		name="md"
+	>
+		<item>Eleven</item>
+		<item>Twelve</item>
+		<item>Thirteen</item>
+		<item>Fourteen</item>
+		<item>Fifteen</item>
+		<item>Sixteen</item>
+		<item>Seventeen</item>
+		<item>Eighteen</item>
+		<item>Nineteen</item>
+	</string-array>
+
+	<string-array
+		name="ms"
+	>
+		<item>January</item>
+		<item>February</item>
+		<item>March</item>
+		<item>April</item>
+		<item>May</item>
+		<item>June</item>
+		<item>July</item>
+		<item>August</item>
+		<item>September</item>
+		<item>October</item>
+		<item>November</item>
+		<item>December</item>
+	</string-array>
+
+
+	<string-array
+		name="jr"
+	>
+		<item>First</item>
+		<item>Second</item>
+		<item>Third</item>
+		<item>Fourth</item>
+		<item>Fifth</item>
+		<item>Sixth</item>
+		<item>Seventh</item>
+		<item>Eighth</item>
+		<item>Ninth</item>
+		<item>Tenth</item>
+		<item>Eleventh</item>
+		<item>Twelfth</item>
+		<item>Thirteenth</item>
+		<item>Fourteenth</item>
+		<item>Fifteenth</item>
+		<item>Sixteenth</item>
+		<item>Seventeenth</item>
+		<item>Eighteenth</item>
+		<item>Nineteenth</item>
+		<item>Twentieth</item>
+		<item>TwentyFirst</item>
+		<item>TwentySecond</item>
+		<item>TwentyThird</item>
+		<item>TwentyFourth</item>
+		<item>TwentyFifth</item>
+		<item>TwentySixth</item>
+		<item>TwentySeventh</item>
+		<item>TwentyEighth</item>
+		<item>TwentyNinth</item>
+		<item>Thirtieth</item>
+		<item>ThirtyFirst</item>
+	</string-array>
+
+	<string-array
+		name="dec_texte"
+	>
+		<item>Top</item>
+		<item>Center</item>
+		<item>Bottom</item>
+	</string-array>
+
+	<string-array
+		name="dec_shadow"
+	>
+		<item>Center</item>
+		<item>Left Bottom</item>
+		<item>Bottom</item>
+		<item>Right Bottom</item>
+	</string-array>
+
+	<string-array
+		name="taille_texte"
+	>
+		<item>Very Small</item>
+		<item>Small</item>
+		<item>Medium</item>
+		<item>Big</item>
+		<item>Very Big</item>
+		<item>Huge</item>
+	</string-array>
+
+	<string-array
+		name="taille_shadow"
+	>
+		<item>Sharp</item>
+		<item>Soft</item>
+		<item>Blurry</item>
+	</string-array>
+
+	<string-array
+		name="typo"
+	>
+		<item>Normal</item>
+		<item>Bold</item>
+		<item>Italique</item>
+		<item>BoldItalique</item>
+	</string-array>
+
+	<string-array
+		name="varia_semaine"
+	>
+		<item>Normal</item>
+		<item>lowercase</item>
+		<item>UPPERCASE</item>
+		<item>cHaOTiK</item>
+		<item>H4X0r133t</item>
+		<item>Triplet</item>
+		<item>TRIPLET</item>
+		<item>Off</item>
+	</string-array>
+
+	<string-array
+		name="varia_separateur"
+	>
+		<item>Off</item>
+		<item>Line</item>
+		<item>: (Comma)</item>
+		<item>/ (Slash)</item>
+		<item>Normal</item>
+		<item>lowercase</item>
+		<item>UPPERCASE</item>
+		<item>cHaOTik</item>
+		<item>H4X0r133t</item>
+		<item>Custom</item>
+	</string-array>
+
+	<string-array
+		name="varia_texte"
+	>
+		<item>Number</item>
+		<item>Normal</item>
+		<item>lowercase</item>
+		<item>UPPERCASE</item>
+		<item>cHaOTik</item>
+		<item>H4X0r133t</item>
+		<item>Off</item>
+
+	</string-array>
+
+	<string-array
+		name="font_texte"
+	>
+		<item>Default</item>
+		<item>Serif</item>
+		<item>Mono</item>
+		<item>Sans Serif</item>
+	</string-array>
+	
+	<string
+		name="heure"
+	>OClock</string>
+	<string
+		name="heures"
+	>OClock</string>
+	<string
+		name="etune"
+	>&amp;One</string>
+
+	<string-array
+		name="element_liste"
+	>
+		<item>Hour</item>
+		<item>Separator</item>
+		<item>Minutes</item>
+		<item>Month</item>
+		<item>Day</item>
+		<item>WeekDay</item>
+	</string-array>
+	<string-array
+		name="position_liste"
+	>
+		<item>Relative</item>
+		<item>Absolute</item>
+	</string-array>
+	<string-array
+		name="alignement_liste"
+	>
+		<item>Left</item>
+		<item>Center</item>
+		<item>Right</item>
+	</string-array>
+	<string-array
+		name="line_liste"
+	>
+		<item>First</item>
+		<item>Second</item>
+		<item>Third</item>
+	</string-array>
+
+<string name="btcouleurs">COLORS</string>
+<string name="btdecalages">OFFSETS</string>
+<string name="bttailles">SIZES</string>
+<string name="bttypo">TYPOGRAPHIE</string>
+<string name="btvaria">STYLE</string>
+<string name="btinterligne">Spacing</string>
+<string name="btheures">  Hours</string>
+<string name="btseparateur">  Separator</string>
+<string name="btminutes">  Minutes</string>
+<string name="btombre">  Shadow</string>
+<string name="btfond">  Background</string>
+<string name="btsemaine">  Week</string>
+<string name="btjour">  Day</string>
+<string name="btmois">  Month</string>
+
+<string name="btposline">  Line</string>
+<string name="btposposition">  Positioning</string>
+<string name="btposalignement"> Alinement</string>
+
+<string name="choisir_ligne">  Choose Line</string>
+<string name="choisir_position">  Choose Positioning</string>
+<string name="choisir_alignement">  Choose Alinement</string>
+
+
+
+
+</resources>

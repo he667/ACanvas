@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#FFFFFF"
+  >
+  <LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:background="#FFFFFF"
+  >
+  <!-- LOGO -->
+  <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/IV0000" android:background="@drawable/logo"></ImageView>
+  
+  <!-- COULEURS -->
+  <Button  android:text="COULEURS     "  android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/IV0001" android:background="@drawable/couleurs" android:textStyle="bold" android:textSize="20dp" android:textColor="#006600" android:gravity="right|center_vertical"></Button>
+  <Button android:text="  Heures" 		android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BCOH" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:background="@drawable/button" android:gravity="left|center_vertical" android:id="@+id/BCOS" android:layout_height="wrap_content" android:text="  Separateur" android:layout_width="fill_parent"  android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Minutes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BCOM" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Ombre" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BCOO" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Fond" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BCOF" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Mois" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BCOMS" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Jour" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BCOSE" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Semaine" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BCOJO" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  
+  
+  <!-- TYPO -->
+  <Button  android:text="TYPOGRAPHIE     "  android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/IV0001" android:background="@drawable/typographie" android:textStyle="bold" android:textSize="20dp" android:textColor="#006600" android:gravity="right|center_vertical" ></Button>
+  <Button android:text="  Heures" 		android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BTYH" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Separateur" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BTYS" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Minutes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BTYM" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Mois" 		android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BTYMS" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Semaine" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BTYSE" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Jour" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BTYJO" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  
+  <!-- TAILLES -->
+  <Button  android:text="TAILLES     "  android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/IV0001" android:background="@drawable/tailles" android:textStyle="bold" android:textSize="20dp" android:textColor="#006600" android:gravity="right|center_vertical" ></Button>
+  <Button android:text="  Heures" 		android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BTAH" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Separateur"    android:background="@drawable/button" android:gravity="left|center_vertical" android:id="@+id/BTAS" android:layout_height="wrap_content" android:layout_width="fill_parent"  android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Minutes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BTAM" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Ombre" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BTAO" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Mois" 		android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BTAMS" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Semaine"    android:background="@drawable/button" android:gravity="left|center_vertical" android:id="@+id/BTASE" android:layout_height="wrap_content" android:layout_width="fill_parent"  android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Jour" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BTAJO" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  
+  <!-- DECALAGES -->
+  <Button  android:text="DECALAGES     "  android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/IV0001" android:background="@drawable/decalages" android:textStyle="bold" android:textSize="20dp" android:textColor="#006600" android:gravity="right|center_vertical" ></Button>
+  <Button android:text="  Heures" 		android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BDEH" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Separateur" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BDES" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Minutes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BDEM" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Ombre" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BDEO" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Mois" 		android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BDEMS" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Semaine" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BDESE" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Jour" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BDEJO" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  
+  <!-- VARIATIONS -->
+  <Button  android:text="VARIATIONS     "  android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/IV0001" android:background="@drawable/variations" android:textStyle="bold" android:textSize="20dp" android:textColor="#006600" android:gravity="right|center_vertical" ></Button>
+  <Button android:text="  Heures" 		android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BVAH" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Separateur" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BVAS" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Minutes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BVAM" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Mois" 		android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BVAMS" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Semaine" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BVASE" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <Button android:text="  Jour" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/BVAJO" android:background="@drawable/button" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  
+  <LinearLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:background="#FFFFFF">
+  <!-- android:background="@drawable/valider" -->
+  <Button android:text="     Valider     " android:id="@+id/BVALIDER" android:layout_height="wrap_content" android:layout_width="wrap_content"  android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button>
+  <!-- android:background="@drawable/reinit" --> 
+  <Button android:text="     Reinitialiser     " android:id="@+id/BREINIT" android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="left|center_vertical" android:textStyle="bold" android:textColor="#000000"></Button> 
+  </LinearLayout>
+  <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="WHOOT (C) 2011 COM.YBI" android:textSize="10dp"></TextView>
+
+</LinearLayout>
+  
+</ScrollView>

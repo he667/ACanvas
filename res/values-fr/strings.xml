@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string
+		name="app_name"
+	>WHOOT</string>
+
+	<string
+		name="choisir_couleur"
+	>
+		Choississez votre Couleur
+	</string>
+	<string
+		name="choisir_font"
+	>
+		Choississez votre Font
+	</string>
+	<string
+		name="choisir_decalage"
+	>Choississez le décalage
+	</string>
+	<string
+		name="choisir_direction"
+	>Choississez la direction
+	</string>
+	<string
+		name="choisir_taille"
+	>Choississez la taille
+	</string>
+	<string
+		name="choisir_typo"
+	>Choississez la typographie
+	</string>
+	<string
+		name="choisir_varia"
+	>Choississez la variation
+	</string>
+	<string
+		name="choisir_custom"
+	>Entrez le texte personnalisé
+	</string>
+	<string
+		name="personnalise"
+	>Personnalisation
+	</string>
+
+	<string
+		name="ok"
+	>Valider
+	</string>
+	<string
+		name="cancel"
+	>Annuler
+	</string>
+
+	<string
+		name="couleurs"
+	>Couleurs</string>
+	<string
+		name="typographie"
+	>Typographie</string>
+	<string
+		name="decalages"
+	>Decalages</string>
+	<string
+		name="tailles"
+	>Tailles</string>
+	<string
+		name="font"
+	>Font</string>
+	<string
+		name="t3D"
+	>3D</string>
+	<string
+		name="variations"
+	>Variations</string>
+	<string
+		name="reinitialiser"
+	>Reinitialiser</string>
+
+	<string
+		name="tBackground"
+	>Image Fond</string>
+	<string
+		name="tPosition"
+	>Position</string>
+
+
+	<string
+		name="valider"
+	>Valider</string>
+	<string
+		name="annuler"
+	>Annuler</string>
+
+	<string
+		name="rotx"
+	>Rotation Horizontale</string>
+	<string
+		name="roty"
+	>Rotation Verticale</string>
+
+
+	<string-array
+		name="se"
+	>
+		<item>Dimanche</item>
+		<item>Lundi</item>
+		<item>Mardi</item>
+		<item>Mercredi</item>
+		<item>Jeudi</item>
+		<item>Vendredi</item>
+		<item>Samedi</item>
+	</string-array>
+	<string-array
+		name="hm"
+	>
+		<item>Minuit</item>
+		<item>Une</item>
+		<item>Deux</item>
+		<item>Trois</item>
+		<item>Quatre</item>
+		<item>Cinq</item>
+		<item>Six</item>
+		<item>Sept</item>
+		<item>Huit</item>
+		<item>Neuf</item>
+		<item>Dix</item>
+		<item>Onze</item>
+		<item>Midi</item>
+	</string-array>
+
+	<string-array
+		name="mm"
+	>
+		<item>Vingt</item>
+		<item>Trente</item>
+		<item>Quarante</item>
+		<item>Cinquante</item>
+	</string-array>
+
+	<string-array
+		name="mn"
+	>
+		<item>
+		</item>
+		<item>Une</item>
+		<item>Deux</item>
+		<item>Trois</item>
+		<item>Quatre</item>
+		<item>Cinq</item>
+		<item>Six</item>
+		<item>Sept</item>
+		<item>Huit</item>
+		<item>Neuf</item>
+		<item>Dix</item>
+	</string-array>
+
+	<string-array
+		name="md"
+	>
+		<item>Onze</item>
+		<item>Douze</item>
+		<item>Treize</item>
+		<item>Quatorze</item>
+		<item>Quinze</item>
+		<item>Seize</item>
+		<item>DixSept</item>
+		<item>DixHuit</item>
+		<item>DixNeuf</item>
+	</string-array>
+
+	<string-array
+		name="ms"
+	>
+		<item>Janvier</item>
+		<item>Février</item>
+		<item>Mars</item>
+		<item>Avril</item>
+		<item>Mai</item>
+		<item>Juin</item>
+		<item>Juillet</item>
+		<item>Aout</item>
+		<item>Septembre</item>
+		<item>Octobre</item>
+		<item>Novembre</item>
+		<item>Décembre</item>
+	</string-array>
+
+
+	<string-array
+		name="jr"
+	>
+		<item>Premier</item>
+		<item>Deux</item>
+		<item>Trois</item>
+		<item>Quatre</item>
+		<item>Cinq</item>
+		<item>Six</item>
+		<item>Sept</item>
+		<item>Huit</item>
+		<item>Neuf</item>
+		<item>Dix</item>
+		<item>Onze</item>
+		<item>Douze</item>
+		<item>Treize</item>
+		<item>Quatorze</item>
+		<item>Quinze</item>
+		<item>Seize</item>
+		<item>DixSept</item>
+		<item>DixHuit</item>
+		<item>DixNeuf</item>
+		<item>Vingt</item>
+		<item>Vingt&amp;Un</item>
+		<item>VingtDeux</item>
+		<item>VingtTrois</item>
+		<item>VingtQuatre</item>
+		<item>VingtCinq</item>
+		<item>VingtSix</item>
+		<item>VingtSept</item>
+		<item>VingtHuit</item>
+		<item>VingtNeuf</item>
+		<item>Trente</item>
+		<item>Trente&amp;Un</item>
+	</string-array>
+
+	<string-array
+		name="dec_texte"
+	>
+		<item>Haut</item>
+		<item>Centre</item>
+		<item>Bas</item>
+	</string-array>
+
+	<string-array
+		name="dec_shadow"
+	>
+		<item>Centre</item>
+		<item>Sud Ouest</item>
+		<item>Sud</item>
+		<item>Sud Est</item>
+	</string-array>
+
+	<string-array
+		name="taille_texte"
+	>
+		<item>Très Petit</item>
+		<item>Petit</item>
+		<item>Moyen</item>
+		<item>Grand</item>
+		<item>Très Grand</item>
+		<item>Enorme!</item>
+	</string-array>
+
+	<string-array
+		name="taille_shadow"
+	>
+		<item>Serrée</item>
+		<item>Proche</item>
+		<item>Diffuse</item>
+	</string-array>
+
+	<string-array
+		name="typo"
+	>
+		<item>Normal</item>
+		<item>Gras</item>
+		<item>Italique</item>
+		<item>GrasItalique</item>
+	</string-array>
+
+	<string-array
+		name="varia_semaine"
+	>
+		<item>Normal</item>
+		<item>minuscule</item>
+		<item>MAJUSCULE</item>
+		<item>cHaOThiQuE</item>
+		<item>H4X0r133t</item>
+		<item>Triplet</item>
+		<item>TRIPLET</item>
+		<item>Sans</item>
+	</string-array>
+
+	<string-array
+		name="varia_separateur"
+	>
+		<item>Sans</item>
+		<item>Trait</item>
+		<item>: (Deux Points)</item>
+		<item>/ (Slash)</item>
+		<item>Normal</item>
+		<item>minuscule</item>
+		<item>MAJUSCULE</item>
+		<item>cHaOThiQuE</item>
+		<item>H4X0r133t</item>
+		<item>Custom</item>
+	</string-array>
+
+	<string-array
+		name="varia_texte"
+	>
+		<item>Chiffre</item>
+		<item>Normal</item>
+		<item>minuscule</item>
+		<item>MAJUSCULE</item>
+		<item>cHaOThiQuE</item>
+		<item>H4X0r133t</item>
+		<item>Sans</item>
+
+	</string-array>
+
+	<string-array
+		name="font_texte"
+	>
+		<item>Par Defaut</item>
+		<item>Serif</item>
+		<item>Mono</item>
+		<item>Sans Serif</item>
+	</string-array>
+	
+	<string
+		name="heure"
+	>Heure</string>
+	<string
+		name="heures"
+	>Heures</string>
+	<string
+		name="etune"
+	>&amp;Une</string>
+
+	
+	<string name="btcouleurs">COULEURS</string>
+	<string name="btdecalages">DECALAGES</string>
+	<string name="bttailles">TAILLES</string>
+	<string name="bttypo">TYPOGRAPHIE</string>
+	<string name="btvaria">VARIATIONS</string>
+	<string name="btinterligne">Interligne</string>
+	<string name="btheures">  Heures</string>
+	<string name="btseparateur">  Separateur</string>
+	<string name="btminutes">  Minutes</string>
+	<string name="btombre">  Ombre</string>
+	<string name="btfond">  Fond</string>
+	<string name="btsemaine">  Semaine</string>
+	<string name="btjour">  Jour</string>
+	<string name="btmois">  Mois</string>
+
+
+</resources>
