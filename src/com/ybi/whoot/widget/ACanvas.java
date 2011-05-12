@@ -250,9 +250,41 @@ public class ACanvas extends AppWidgetProvider
 		{
 			try
 			{
+				int backgroundPosX = 0;
+				int backgroundPosY = 0;
+				
 				Log.d("YBI" ,"loading file" + ASingletonCanvas.getInstance().getImage().getImage().toString());
 				Bitmap bgi = Media.getBitmap(ASingletonCanvas.getInstance().getContext().getContentResolver(), ASingletonCanvas.getInstance().getImage().getImage());
-				canvas.drawBitmap(bgi, 0, 0, null);
+				
+				if ((ASingletonCanvas.getInstance().getPosition("backgroundPos").getType() == APosition.POSITION_TYPE_RELATIF)
+						&& (ASingletonCanvas.getInstance().getPosition("backgroundPos").getAlignement() == APosition.POSITION_ALIGNEMENT_GAUCHE))
+				{
+					backgroundPosX = (int) (ASingletonCanvas.getInstance().getPosition("backgroundPos").getPosx());
+					backgroundPosY = (int) (ASingletonCanvas.getInstance().getPosition("backgroundPos").getPosy());
+				}
+
+				if ((ASingletonCanvas.getInstance().getPosition("backgroundPos").getType() == APosition.POSITION_TYPE_RELATIF)
+						&& (ASingletonCanvas.getInstance().getPosition("backgroundPos").getAlignement() == APosition.POSITION_ALIGNEMENT_CENTRE))
+				{
+					backgroundPosX = (int) (ASingletonCanvas.getInstance().getPosition("backgroundPos").getPosx()- (int) (bgi.getWidth() / 2.0f) + (int) (MAX_WIDTH / 2.0f));
+					backgroundPosY = (int) (ASingletonCanvas.getInstance().getPosition("backgroundPos").getPosy()- (int) (bgi.getHeight() / 2.0f) + (int) (MAX_HEIGHT / 2.0f));
+				}
+
+				if ((ASingletonCanvas.getInstance().getPosition("backgroundPos").getType() == APosition.POSITION_TYPE_RELATIF)
+						&& (ASingletonCanvas.getInstance().getPosition("backgroundPos").getAlignement() == APosition.POSITION_ALIGNEMENT_DROITE))
+				{
+					backgroundPosX = (int) (ASingletonCanvas.getInstance().getPosition("backgroundPos").getPosx() - bgi.getWidth() + MAX_WIDTH);
+					backgroundPosY = (int) (ASingletonCanvas.getInstance().getPosition("backgroundPos").getPosy() - bgi.getHeight() + MAX_HEIGHT);
+				}
+
+				if (ASingletonCanvas.getInstance().getPosition("backgroundPos").getType() == APosition.POSITION_TYPE_ABSOLU)
+				{
+						backgroundPosX = ASingletonCanvas.getInstance().getPosition("backgroundPos").getPosx();
+						backgroundPosY = ASingletonCanvas.getInstance().getPosition("backgroundPos").getPosy();
+				}
+
+				
+				canvas.drawBitmap(bgi, backgroundPosX, backgroundPosY, null);
 			} catch (FileNotFoundException e)
 			{
 				Log.e("YBI" ,"file not found exception when looking for background" ,e);

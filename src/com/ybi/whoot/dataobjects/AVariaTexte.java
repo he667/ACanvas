@@ -15,6 +15,7 @@ public class AVariaTexte implements AVaria
 	public final static int CHAOTIQUE = 4;
 	public final static int HAXORLEET = 5;
 	public final static int SANS = 6;
+	public final static int DOUBLECHIFFRE = 7;
 
 	private int type = NORMAL;
 
@@ -39,6 +40,8 @@ public class AVariaTexte implements AVaria
 		{
 		case CHIFFRE:
 			return s;
+		case DOUBLECHIFFRE:
+			return Integer.parseInt(s)<10?'0'+s:s;
 		case NORMAL:
 			return s;
 		case MINUSCULE:

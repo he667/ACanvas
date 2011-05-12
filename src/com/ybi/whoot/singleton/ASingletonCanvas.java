@@ -182,6 +182,7 @@ public class ASingletonCanvas
 		positionGroup.put("jourPos", new APosition(APosition.LINE_TWO,0,0));
 		positionGroup.put("semainePos", new APosition(APosition.LINE_TWO,0,0));
 		positionGroup.put("moisPos", new APosition(APosition.LINE_TWO,0,0));
+		positionGroup.put("backgroundPos", new APosition(APosition.LINE_ONE,0,0));
 		
 	}
 
