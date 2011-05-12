@@ -30,8 +30,6 @@ public class ACouleurActivity extends Activity implements OnClickListener,
 	private Button btBCOMS;
 	private Button btBCOJO;
 
-	private Button btBVALIDER;
-
 	@Override
 	protected void onDestroy()
 	{
@@ -42,8 +40,6 @@ public class ACouleurActivity extends Activity implements OnClickListener,
 		btBCOS.setOnClickListener(null);
 		btBCOF.setOnClickListener(null);
 
-		btBVALIDER.setOnClickListener(null);
-
 		btBCOH = null;
 		btBCOM = null;
 		btBCOO = null;
@@ -53,8 +49,6 @@ public class ACouleurActivity extends Activity implements OnClickListener,
 		btBCOSE = null;
 		btBCOMS = null;
 		btBCOJO = null;
-
-		btBVALIDER = null;
 
 	}
 
@@ -83,9 +77,6 @@ public class ACouleurActivity extends Activity implements OnClickListener,
 		btBCOSE.setOnClickListener(this);
 		btBCOMS.setOnClickListener(this);
 		btBCOJO.setOnClickListener(this);
-
-		btBVALIDER = (Button) this.findViewById(R.id.BVALIDER);
-		btBVALIDER.setOnClickListener(this);
 
 		btBCOH.setText(Utils.texteAndColor(btBCOH.getText(), ASingletonCanvas.getInstance().getColor("heuresColor").getColor()));
 		btBCOM.setText(Utils.texteAndColor(btBCOM.getText(), ASingletonCanvas.getInstance().getColor("minutesColor").getColor()));
@@ -162,10 +153,7 @@ public class ACouleurActivity extends Activity implements OnClickListener,
 			AColorPicker acp = new AColorPicker(this, ASingletonCanvas.getInstance().getColor("backgroundColor"));
 			acp.register(this);
 			acp.show();
-		} else if (v.getId() == R.id.BVALIDER)
-		{
-			finish();
-		}
+		} 
 
 	}
 
@@ -180,5 +168,11 @@ public class ACouleurActivity extends Activity implements OnClickListener,
 		btBCOJO.setText(Utils.texteAndColor(btBCOJO.getText(), ASingletonCanvas.getInstance().getColor("jourColor").getColor()));
 		btBCOO.setText(Utils.texteAndColor(btBCOO.getText(), ASingletonCanvas.getInstance().getColor("shadowColor").getColor()));
 		btBCOF.setText(Utils.texteAndColor(btBCOF.getText(), ASingletonCanvas.getInstance().getColor("backgroundColor").getColor()));
+	}
+	
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+		finish();
 	}
 }

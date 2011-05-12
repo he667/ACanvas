@@ -25,8 +25,6 @@ public class ATypographieActivity extends Activity implements OnClickListener
 	private Button btBTYMS;
 	private Button btBTYJO;
 
-	private Button btBVALIDER;
-
 	@Override
 	protected void onDestroy()
 	{
@@ -43,8 +41,6 @@ public class ATypographieActivity extends Activity implements OnClickListener
 		btBTYSE = null;
 		btBTYMS = null;
 		btBTYJO = null;
-
-		btBVALIDER = null;
 
 	}
 
@@ -71,9 +67,6 @@ public class ATypographieActivity extends Activity implements OnClickListener
 		btBTYSE.setOnClickListener(this);
 		btBTYMS.setOnClickListener(this);
 		btBTYJO.setOnClickListener(this);
-
-		btBVALIDER = (Button) this.findViewById(R.id.BVALIDER);
-		btBVALIDER.setOnClickListener(this);
 
 		btBTYH.setText(Utils.texteAndValue(btBTYH.getText(), ASingletonCanvas.getInstance().getTypo("heuresTypo").getLibelle()));
 		btBTYM.setText(Utils.texteAndValue(btBTYM.getText(), ASingletonCanvas.getInstance().getTypo("minutesTypo").getLibelle()));
@@ -197,11 +190,12 @@ public class ATypographieActivity extends Activity implements OnClickListener
 			});
 			AlertDialog alert = builder.create();
 			alert.show();
-		} else if (v.getId() == R.id.BVALIDER)
-		{
-			finish();
-		}
-
+		} 
 	}
-
+	
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+		finish();
+	}
 }

@@ -73,21 +73,7 @@
 
 
 
-			<LinearLayout
-				android:layout_width="fill_parent"
-				android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:background="#FFFFFF"
-			>
-				<!-- android:background="@drawable/valider" -->
-				<Button
-					style="@style/HomeButtonMini"
-					android:text="@string/valider"
-					android:id="@+id/BVALIDER"
-				></Button>
-				<!-- android:background="@drawable/reinit" -->
-
-			</LinearLayout>
+			
 			<TextView
 				android:layout_width="fill_parent"
 				android:layout_height="wrap_content"

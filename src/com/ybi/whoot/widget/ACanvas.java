@@ -160,9 +160,9 @@ public class ACanvas extends AppWidgetProvider
 		
 		GregorianCalendar gc = new GregorianCalendar();
 
-		String heure;
-		String sep;
-		String minute;
+		String heure = null;
+		String sep =null;
+		String minute = null;
 
 		int ijour = gc.get(GregorianCalendar.DATE) - 1;
 		int isemaine = gc.get(GregorianCalendar.DAY_OF_WEEK) - 1;
@@ -176,6 +176,9 @@ public class ACanvas extends AppWidgetProvider
 		if (ASingletonCanvas.getInstance().getType("heuresType").getType() == AVariaTexte.CHIFFRE)
 			heure = Integer.toString(h);
 		else
+		if (ASingletonCanvas.getInstance().getType("heuresType").getType() == AVariaTexte.DOUBLECHIFFRE)
+			heure = "0" + Integer.toString(h);
+		else
 			heure = ASingletonCanvas.getInstance().getHm(h);
 
 		sep = new String();
@@ -188,10 +191,12 @@ public class ACanvas extends AppWidgetProvider
 
 		if (ASingletonCanvas.getInstance().getType("minutesType").getType() == AVariaTexte.CHIFFRE)
 		{
+				minute = Integer.toString(m);
+		} else
+		if (ASingletonCanvas.getInstance().getType("minutesType").getType() == AVariaTexte.DOUBLECHIFFRE)
+		{
 			if (m < 10)
 				minute = "0" + Integer.toString(m);
-			else
-				minute = Integer.toString(m);
 		} else
 		{
 			if (m <= 10)
@@ -310,6 +315,10 @@ public class ACanvas extends AppWidgetProvider
 		if (ASingletonCanvas.getInstance().getType("jourType").getType() == AVariaTexte.CHIFFRE)
 		{
 			jour = Integer.toString(ijour+1);
+		} else
+		if ((ASingletonCanvas.getInstance().getType("jourType").getType() == AVariaTexte.DOUBLECHIFFRE) && (ijour+1<10))
+		{
+			jour = "0" + Integer.toString(ijour+1);
 		} else
 		{
 			jour = ASingletonCanvas.getInstance().getJr(ijour);

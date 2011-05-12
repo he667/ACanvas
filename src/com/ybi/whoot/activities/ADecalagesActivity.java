@@ -28,8 +28,6 @@ public class ADecalagesActivity extends Activity implements OnClickListener
 	private Button btBDEMS;
 	private Button btBDEJO;
 
-	private Button btBVALIDER;
-
 	@Override
 	protected void onDestroy()
 	{
@@ -43,8 +41,6 @@ public class ADecalagesActivity extends Activity implements OnClickListener
 		btBDEMS.setOnClickListener(null);
 		btBDEJO.setOnClickListener(null);
 
-		btBVALIDER.setOnClickListener(null);
-
 		btBDEH = null;
 		btBDEM = null;
 		btBDEO = null;
@@ -53,8 +49,6 @@ public class ADecalagesActivity extends Activity implements OnClickListener
 		btBDESE = null;
 		btBDEMS = null;
 		btBDEJO = null;
-
-		btBVALIDER = null;
 
 	}
 
@@ -84,9 +78,6 @@ public class ADecalagesActivity extends Activity implements OnClickListener
 		btBDESE.setOnClickListener(this);
 		btBDEMS.setOnClickListener(this);
 		btBDEJO.setOnClickListener(this);
-
-		btBVALIDER = (Button) this.findViewById(R.id.BVALIDER);
-		btBVALIDER.setOnClickListener(this);
 
 		btBDEH.setText(Utils.texteAndValue(btBDEH.getText(), ASingletonCanvas.getInstance().getDecalage("heuresDecalage").getLibelleTexte()));
 		btBDEM.setText(Utils.texteAndValue(btBDEM.getText(), ASingletonCanvas.getInstance().getDecalage("minutesDecalage").getLibelleTexte()));
@@ -230,11 +221,13 @@ public class ADecalagesActivity extends Activity implements OnClickListener
 			});
 			AlertDialog alert = builder.create();
 			alert.show();
-		} else if (v.getId() == R.id.BVALIDER)
-		{
-			finish();
-		}
-
+		} 
+	}
+	
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+		finish();
 	}
 
 }

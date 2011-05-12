@@ -58,26 +58,14 @@
 				style="@style/ButtonSelect"
 				android:text="@string/btjour"
 				android:id="@+id/BVAJO"
-			></Button>
+			></Button> 
 			<Button
 				style="@style/ButtonSelect"
 				android:text="@string/btmois"
 				android:id="@+id/BVAMS"
 			></Button>
 
-			<LinearLayout
-				android:layout_width="fill_parent"
-				android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:background="#FFFFFF"
-			>
-				<!-- android:background="@drawable/valider" -->
-				<Button
-					style="@style/HomeButtonMini"
-					android:text="@string/valider"
-					android:id="@+id/BVALIDER"
-				></Button>
-			</LinearLayout>
+			
 			<TextView
 				android:layout_width="fill_parent"
 				android:layout_height="wrap_content"

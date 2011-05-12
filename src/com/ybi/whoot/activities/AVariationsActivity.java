@@ -28,8 +28,6 @@ public class AVariationsActivity extends Activity implements OnClickListener
 	private Button btBVAMS;
 	private Button btBVAJO;
 
-	private Button btBVALIDER;
-
 	@Override
 	protected void onDestroy()
 	{
@@ -42,8 +40,6 @@ public class AVariationsActivity extends Activity implements OnClickListener
 		btBVAMS.setOnClickListener(null);
 		btBVAJO.setOnClickListener(null);
 
-		btBVALIDER.setOnClickListener(null);
-
 		btBVAH = null;
 		btBVAM = null;
 		btBVAS = null;
@@ -51,8 +47,6 @@ public class AVariationsActivity extends Activity implements OnClickListener
 		btBVASE = null;
 		btBVAMS = null;
 		btBVAJO = null;
-
-		btBVALIDER = null;
 
 	}
 
@@ -78,9 +72,6 @@ public class AVariationsActivity extends Activity implements OnClickListener
 		btBVASE.setOnClickListener(this);
 		btBVAMS.setOnClickListener(this);
 		btBVAJO.setOnClickListener(this);
-
-		btBVALIDER = (Button) this.findViewById(R.id.BVALIDER);
-		btBVALIDER.setOnClickListener(this);
 
 		btBVAH.setText(Utils.texteAndValue(btBVAH.getText(), ASingletonCanvas.getInstance().getType("heuresType").getLibelle()));
 		btBVAM.setText(Utils.texteAndValue(btBVAM.getText(), ASingletonCanvas.getInstance().getType("minutesType").getLibelle()));
@@ -238,12 +229,16 @@ public class AVariationsActivity extends Activity implements OnClickListener
 			});
 			AlertDialog alert = builder.create();
 			alert.show();
-		} else if (v.getId() == R.id.BVALIDER)
-		{
-
-			finish();
-		}
+		} 
 
 	}
+
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+		finish();
+	}
+	
+	
 
 }

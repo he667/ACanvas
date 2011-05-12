@@ -40,8 +40,6 @@ public class AVariaTexte implements AVaria
 		{
 		case CHIFFRE:
 			return s;
-		case DOUBLECHIFFRE:
-			return Integer.parseInt(s)<10?'0'+s:s;
 		case NORMAL:
 			return s;
 		case MINUSCULE:

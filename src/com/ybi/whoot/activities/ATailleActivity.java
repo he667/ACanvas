@@ -32,8 +32,6 @@ public class ATailleActivity extends Activity implements OnClickListener
 	private Button btBTAMS;
 	private Button btBTAJO;
 
-	private Button btBVALIDER;
-
 	@Override
 	protected void onDestroy()
 	{
@@ -48,8 +46,6 @@ public class ATailleActivity extends Activity implements OnClickListener
 		btBTAMS.setOnClickListener(null);
 		btBTAJO.setOnClickListener(null);
 
-		btBVALIDER.setOnClickListener(null);
-
 		btBTAH = null;
 		btBTAM = null;
 		btBTAO = null;
@@ -58,8 +54,6 @@ public class ATailleActivity extends Activity implements OnClickListener
 		btBTASE = null;
 		btBTAMS = null;
 		btBTAJO = null;
-
-		btBVALIDER = null;
 
 	}
 
@@ -87,9 +81,6 @@ public class ATailleActivity extends Activity implements OnClickListener
 		btBTASE.setOnClickListener(this);
 		btBTAMS.setOnClickListener(this);
 		btBTAJO.setOnClickListener(this);
-
-		btBVALIDER = (Button) this.findViewById(R.id.BVALIDER);
-		btBVALIDER.setOnClickListener(this);
 
 		btBTAH.setText(Utils.texteAndValue(btBTAH.getText(), ASingletonCanvas.getInstance().getTaille("heuresTaille").getLibelle()));
 		btBTAM.setText(Utils.texteAndValue(btBTAM.getText(), ASingletonCanvas.getInstance().getTaille("minutesTaille").getLibelle()));
@@ -254,12 +245,12 @@ public class ATailleActivity extends Activity implements OnClickListener
 			AlertDialog alert = builder.create();
 			alert.show();
 
-		} else if (v.getId() == R.id.BVALIDER)
-		{
-
-			finish();
 		}
-
 	}
-
+	
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+		finish();
+	}
 }
