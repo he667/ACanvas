@@ -40,6 +40,8 @@ public class AVariaTexte implements AVaria
 		{
 		case CHIFFRE:
 			return s;
+		case DOUBLECHIFFRE:
+			return s;
 		case NORMAL:
 			return s;
 		case MINUSCULE:

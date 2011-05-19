@@ -197,6 +197,8 @@ public class ACanvas extends AppWidgetProvider
 		{
 			if (m < 10)
 				minute = "0" + Integer.toString(m);
+			else
+				minute = Integer.toString(m);
 		} else
 		{
 			if (m <= 10)
@@ -316,9 +318,12 @@ public class ACanvas extends AppWidgetProvider
 		{
 			jour = Integer.toString(ijour+1);
 		} else
-		if ((ASingletonCanvas.getInstance().getType("jourType").getType() == AVariaTexte.DOUBLECHIFFRE) && (ijour+1<10))
+		if ((ASingletonCanvas.getInstance().getType("jourType").getType() == AVariaTexte.DOUBLECHIFFRE))
 		{
-			jour = "0" + Integer.toString(ijour+1);
+			if (ijour+1<10)
+				jour = "0" + Integer.toString(ijour+1);
+			else
+				jour = Integer.toString(ijour+1);
 		} else
 		{
 			jour = ASingletonCanvas.getInstance().getJr(ijour);

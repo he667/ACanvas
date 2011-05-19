@@ -122,67 +122,97 @@ public class ASingletonCanvas
 
 	public void initSettings()
 	{
-		colorGroup = new ASettings<AColor>();
-		tailleGroup = new ASettings<ATaille>();
-		decalageGroup = new ASettings<ADecalage>();
-		typeGroup = new ASettings<AVaria>();
-		typoGroup= new ASettings<ATypo>();
-		angleGroup= new ASettings<AAngle>();
-		fontGroup = new ASettings<AFont>();
-		imageGroup = new ASettings<AImage>();
-		positionGroup = new ASettings<APosition>();
-		
-		colorGroup.put("sepColor", new AColor(255, 0, 0, 0));
-		colorGroup.put("heuresColor", new AColor(255, 255, 255, 255));
-		colorGroup.put("minutesColor", new AColor(255, 255, 255, 255));
-		colorGroup.put("shadowColor", new AColor(50, 0, 0, 0));
-		colorGroup.put("backgroundColor", new AColor(0, 0, 0, 0));
-		colorGroup.put("jourColor", new AColor(255, 0, 0, 0));
-		colorGroup.put("semaineColor", new AColor(255, 255, 255, 255));
-		colorGroup.put("moisColor", new AColor(255, 255, 255, 255));
+		if (colorGroup == null)
+		{
+			colorGroup = new ASettings<AColor>();
+			colorGroup.put("sepColor", new AColor(255, 0, 0, 0));
+			colorGroup.put("heuresColor", new AColor(255, 255, 255, 255));
+			colorGroup.put("minutesColor", new AColor(255, 255, 255, 255));
+			colorGroup.put("shadowColor", new AColor(50, 0, 0, 0));
+			colorGroup.put("backgroundColor", new AColor(0, 0, 0, 0));
+			colorGroup.put("jourColor", new AColor(255, 0, 0, 0));
+			colorGroup.put("semaineColor", new AColor(255, 255, 255, 255));
+			colorGroup.put("moisColor", new AColor(255, 255, 255, 255));
+		}
 
-		tailleGroup.put("heuresTaille", new ATaille(ATaille.GRAND));
-		tailleGroup.put("sepTaille", new ATaille(ATaille.PETIT));
-		tailleGroup.put("minutesTaille", new ATaille(ATaille.GRAND));
-		tailleGroup.put("shadowTaille", new ATaille(ATaille.DIFFUSE));
-		tailleGroup.put("jourTaille", new ATaille(ATaille.PETIT));
-		tailleGroup.put("semaineTaille", new ATaille(ATaille.TRESPETIT));
-		tailleGroup.put("moisTaille", new ATaille(ATaille.TRESPETIT));
-		tailleGroup.put("interligneTaille", new ATaille(ATaille.TRESPETIT));
 		
-		decalageGroup.put("heuresDecalage", new ADecalage());
-		decalageGroup.put("sepDecalage", new ADecalage());
-		decalageGroup.put("minutesDecalage", new ADecalage());
-		decalageGroup.put("shadowDecalage", new ADecalage());
-		decalageGroup.put("jourDecalage", new ADecalage());
-		decalageGroup.put("semaineDecalage", new ADecalage());
-		decalageGroup.put("moisDecalage", new ADecalage());
+		if (tailleGroup == null)
+		{
+			tailleGroup = new ASettings<ATaille>();
+			tailleGroup.put("heuresTaille", new ATaille(ATaille.GRAND));
+			tailleGroup.put("sepTaille", new ATaille(ATaille.PETIT));
+			tailleGroup.put("minutesTaille", new ATaille(ATaille.GRAND));
+			tailleGroup.put("shadowTaille", new ATaille(ATaille.DIFFUSE));
+			tailleGroup.put("jourTaille", new ATaille(ATaille.PETIT));
+			tailleGroup.put("semaineTaille", new ATaille(ATaille.TRESPETIT));
+			tailleGroup.put("moisTaille", new ATaille(ATaille.TRESPETIT));
+			tailleGroup.put("interligneTaille", new ATaille(ATaille.TRESPETIT));
+		}
 
-		typeGroup.put("heuresType", new AVariaTexte(AVariaTexte.NORMAL));
-		typeGroup.put("sepType", new AVariaSeparateur(AVariaSeparateur.NORMAL));
-		typeGroup.put("minutesType", new AVariaTexte(AVariaTexte.NORMAL));
-		typeGroup.put("jourType", new AVariaTexte(AVariaTexte.NORMAL));
-		typeGroup.put("semaineType", new AVariaSemaine(AVariaSemaine.NORMAL));
-		typeGroup.put("moisType", new AVariaTexte(AVariaTexte.NORMAL));
-
-		typoGroup.put("sepTypo", new ATypo());
-		typoGroup.put("heuresTypo", new ATypo());
-		typoGroup.put("minutesTypo", new ATypo());
-		typoGroup.put("jourTypo", new ATypo());
-		typoGroup.put("semaineTypo", new ATypo());
-		typoGroup.put("moisTypo", new ATypo());
 		
-		angleGroup.put("globalAngle", new AAngle(0,0));
-		fontGroup.put("globalFont", new AFont(AFont.DEFAULT));
-		imageGroup.put("globalImage", new AImage());
+		if (decalageGroup == null)
+		{
+			decalageGroup = new ASettings<ADecalage>();
+			decalageGroup.put("heuresDecalage", new ADecalage());
+			decalageGroup.put("sepDecalage", new ADecalage());
+			decalageGroup.put("minutesDecalage", new ADecalage());
+			decalageGroup.put("shadowDecalage", new ADecalage());
+			decalageGroup.put("jourDecalage", new ADecalage());
+			decalageGroup.put("semaineDecalage", new ADecalage());
+			decalageGroup.put("moisDecalage", new ADecalage());
+		}
 		
-		positionGroup.put("heuresPos", new APosition(APosition.LINE_ONE,0,0));
-		positionGroup.put("sepPos", new APosition(APosition.LINE_ONE,0,0));
-		positionGroup.put("minutesPos", new APosition(APosition.LINE_ONE,0,0));
-		positionGroup.put("jourPos", new APosition(APosition.LINE_TWO,0,0));
-		positionGroup.put("semainePos", new APosition(APosition.LINE_TWO,0,0));
-		positionGroup.put("moisPos", new APosition(APosition.LINE_TWO,0,0));
-		positionGroup.put("backgroundPos", new APosition(APosition.LINE_ONE,0,0));
+		if (typeGroup == null)
+		{
+			typeGroup = new ASettings<AVaria>();
+			typeGroup.put("heuresType", new AVariaTexte(AVariaTexte.NORMAL));
+			typeGroup.put("sepType", new AVariaSeparateur(AVariaSeparateur.NORMAL));
+			typeGroup.put("minutesType", new AVariaTexte(AVariaTexte.NORMAL));
+			typeGroup.put("jourType", new AVariaTexte(AVariaTexte.NORMAL));
+			typeGroup.put("semaineType", new AVariaSemaine(AVariaSemaine.NORMAL));
+			typeGroup.put("moisType", new AVariaTexte(AVariaTexte.NORMAL));
+		}
+		
+		if (typoGroup == null)
+		{
+			typoGroup= new ASettings<ATypo>();
+			typoGroup.put("sepTypo", new ATypo());
+			typoGroup.put("heuresTypo", new ATypo());
+			typoGroup.put("minutesTypo", new ATypo());
+			typoGroup.put("jourTypo", new ATypo());
+			typoGroup.put("semaineTypo", new ATypo());
+			typoGroup.put("moisTypo", new ATypo());
+		}
+		
+		if (angleGroup == null)
+		{
+			angleGroup= new ASettings<AAngle>();
+			angleGroup.put("globalAngle", new AAngle(0,0));
+		}
+		
+		if (fontGroup == null)
+		{
+			fontGroup = new ASettings<AFont>();
+			fontGroup.put("globalFont", new AFont(AFont.DEFAULT));
+		}
+		
+		if (imageGroup == null)
+		{
+			imageGroup = new ASettings<AImage>();
+			imageGroup.put("globalImage", new AImage());
+		}
+		
+		if (positionGroup == null)
+		{
+			positionGroup = new ASettings<APosition>();
+			positionGroup.put("heuresPos", new APosition(APosition.LINE_ONE,0,0));
+			positionGroup.put("sepPos", new APosition(APosition.LINE_ONE,0,0));
+			positionGroup.put("minutesPos", new APosition(APosition.LINE_ONE,0,0));
+			positionGroup.put("jourPos", new APosition(APosition.LINE_TWO,0,0));
+			positionGroup.put("semainePos", new APosition(APosition.LINE_TWO,0,0));
+			positionGroup.put("moisPos", new APosition(APosition.LINE_TWO,0,0));
+			positionGroup.put("backgroundPos", new APosition(APosition.LINE_ONE,0,0));
+		}
 		
 	}
 
@@ -215,8 +245,7 @@ public class ASingletonCanvas
 	{
 		// cas de figure tordu
 		// au cas ou le telephone redemarre et que la personne a fait un clean avant de l'eteindre
-		if (colorGroup == null)
-			initSettings();
+		initSettings();
 
 		colorGroup.load(this.context);
 		tailleGroup.load(this.context);

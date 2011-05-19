@@ -104,33 +104,33 @@ public class APositionActivity extends Activity implements OnTouchListener
 	public void onUp(View v)
 	{
 		Log.d("YBI", "UP Movement");
-		renderingPreview.setImageBitmap(ACanvas.drawWidget());
 		ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setPosy(ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).getPosy() - 1);
 		updateLabels();
+		renderingPreview.setImageBitmap(ACanvas.drawWidget());
 	}
 
 	public void onDown(View v)
 	{
 		Log.d("YBI", "Down Movement");
-		renderingPreview.setImageBitmap(ACanvas.drawWidget());
 		ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setPosy(ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).getPosy() + 1);
 		updateLabels();
+		renderingPreview.setImageBitmap(ACanvas.drawWidget());
 	}
 
 	public void onLeft(View v)
 	{
 		Log.d("YBI", "Left Movement");
-		renderingPreview.setImageBitmap(ACanvas.drawWidget());
 		ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setPosx(ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).getPosx() - 1);
 		updateLabels();
+		renderingPreview.setImageBitmap(ACanvas.drawWidget());
 	}
 
 	public void onRight(View v)
 	{
 		Log.d("YBI", "Right Movement");
-		renderingPreview.setImageBitmap(ACanvas.drawWidget());
 		ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setPosx(ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).getPosx() + 1);
 		updateLabels();
+		renderingPreview.setImageBitmap(ACanvas.drawWidget());
 	}
 
 	public void onPrevious(View v)
@@ -138,6 +138,7 @@ public class APositionActivity extends Activity implements OnTouchListener
 		if (currentElement > 0)
 			currentElement--;
 		updateLabels();
+		renderingPreview.setImageBitmap(ACanvas.drawWidget());
 	}
 
 	public void onNext(View v)
@@ -145,6 +146,7 @@ public class APositionActivity extends Activity implements OnTouchListener
 		if (currentElement < (elementsListe.length - 1))
 			currentElement++;
 		updateLabels();
+		renderingPreview.setImageBitmap(ACanvas.drawWidget());
 	}
 
 	public void onPositionnementPosition(View v)
@@ -155,7 +157,13 @@ public class APositionActivity extends Activity implements OnTouchListener
 		{
 			public void onClick(DialogInterface dialog, int item)
 			{
-				ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setType(item);
+				// si on change de positionnement alors je reinitialise les valeurs
+				if (ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).getType() != item)
+				{
+					ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setType(item);
+					ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setPosx(0);
+					ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setPosy(0);
+				}
 				dialog.dismiss();
 				renderingPreview.setImageBitmap(ACanvas.drawWidget());
 				updateLabels();
