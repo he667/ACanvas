@@ -17,6 +17,7 @@ import android.widget.TextView;
 import com.ybi.whoot.R;
 import com.ybi.whoot.singleton.ASingletonCanvas;
 import com.ybi.whoot.widget.ACanvas;
+import com.ybi.whoot.widget.ADrawWidget;
 
 public class APositionActivity extends Activity implements OnTouchListener
 {
@@ -71,7 +72,7 @@ public class APositionActivity extends Activity implements OnTouchListener
 		right.setOnTouchListener(this);
 
 		// affichage initial de la zone de previsualisation
-		renderingPreview.setImageBitmap(ACanvas.drawWidget());
+		renderingPreview.setImageBitmap(ADrawWidget.drawWidget());
 		Resources res = getResources();
 		elementsListe = res.getStringArray(R.array.element_liste);
 		positionnementListe = res.getStringArray(R.array.position_liste);
@@ -106,7 +107,7 @@ public class APositionActivity extends Activity implements OnTouchListener
 		Log.d("YBI", "UP Movement");
 		ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setPosy(ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).getPosy() - 1);
 		updateLabels();
-		renderingPreview.setImageBitmap(ACanvas.drawWidget());
+		renderingPreview.setImageBitmap(ADrawWidget.drawWidget());
 	}
 
 	public void onDown(View v)
@@ -114,7 +115,7 @@ public class APositionActivity extends Activity implements OnTouchListener
 		Log.d("YBI", "Down Movement");
 		ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setPosy(ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).getPosy() + 1);
 		updateLabels();
-		renderingPreview.setImageBitmap(ACanvas.drawWidget());
+		renderingPreview.setImageBitmap(ADrawWidget.drawWidget());
 	}
 
 	public void onLeft(View v)
@@ -122,7 +123,7 @@ public class APositionActivity extends Activity implements OnTouchListener
 		Log.d("YBI", "Left Movement");
 		ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setPosx(ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).getPosx() - 1);
 		updateLabels();
-		renderingPreview.setImageBitmap(ACanvas.drawWidget());
+		renderingPreview.setImageBitmap(ADrawWidget.drawWidget());
 	}
 
 	public void onRight(View v)
@@ -130,7 +131,7 @@ public class APositionActivity extends Activity implements OnTouchListener
 		Log.d("YBI", "Right Movement");
 		ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setPosx(ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).getPosx() + 1);
 		updateLabels();
-		renderingPreview.setImageBitmap(ACanvas.drawWidget());
+		renderingPreview.setImageBitmap(ADrawWidget.drawWidget());
 	}
 
 	public void onPrevious(View v)
@@ -138,7 +139,7 @@ public class APositionActivity extends Activity implements OnTouchListener
 		if (currentElement > 0)
 			currentElement--;
 		updateLabels();
-		renderingPreview.setImageBitmap(ACanvas.drawWidget());
+		renderingPreview.setImageBitmap(ADrawWidget.drawWidget());
 	}
 
 	public void onNext(View v)
@@ -146,7 +147,7 @@ public class APositionActivity extends Activity implements OnTouchListener
 		if (currentElement < (elementsListe.length - 1))
 			currentElement++;
 		updateLabels();
-		renderingPreview.setImageBitmap(ACanvas.drawWidget());
+		renderingPreview.setImageBitmap(ADrawWidget.drawWidget());
 	}
 
 	public void onPositionnementPosition(View v)
@@ -165,7 +166,7 @@ public class APositionActivity extends Activity implements OnTouchListener
 					ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setPosy(0);
 				}
 				dialog.dismiss();
-				renderingPreview.setImageBitmap(ACanvas.drawWidget());
+				renderingPreview.setImageBitmap(ADrawWidget.drawWidget());
 				updateLabels();
 			}
 		});
@@ -183,7 +184,7 @@ public class APositionActivity extends Activity implements OnTouchListener
 			{
 				ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setAlignement(item);
 				dialog.dismiss();
-				renderingPreview.setImageBitmap(ACanvas.drawWidget());
+				renderingPreview.setImageBitmap(ADrawWidget.drawWidget());
 				updateLabels();
 			}
 		});
@@ -202,7 +203,7 @@ public class APositionActivity extends Activity implements OnTouchListener
 			{
 				ASingletonCanvas.getInstance().getPosition(elementsKey[currentElement]).setLine(item);
 				dialog.dismiss();
-				renderingPreview.setImageBitmap(ACanvas.drawWidget());
+				renderingPreview.setImageBitmap(ADrawWidget.drawWidget());
 				updateLabels();
 			}
 		});

@@ -37,6 +37,7 @@ public class ACanvasService extends Service
 		inf.addAction(Intent.ACTION_TIME_TICK);
 		inf.addAction(Intent.ACTION_SCREEN_OFF);
 		inf.addAction(Intent.ACTION_SCREEN_ON);
+		inf.addAction(Intent.ACTION_BATTERY_CHANGED);
 		registerReceiver(acb, inf);
 	}
 
@@ -64,6 +65,7 @@ public class ACanvasService extends Service
 		inf.addAction(Intent.ACTION_TIME_TICK);
 		inf.addAction(Intent.ACTION_SCREEN_OFF);
 		inf.addAction(Intent.ACTION_SCREEN_ON);
+		inf.addAction(Intent.ACTION_BATTERY_CHANGED);
 		registerReceiver(acb, inf);
 	}
 

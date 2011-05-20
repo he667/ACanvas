@@ -23,11 +23,21 @@ public class ACanvasBroadcastReceiver extends BroadcastReceiver
 
 		} else if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF))
 		{
-			ACanvas.isVisible = false;
-		}
-		if (intent.getAction().equals(Intent.ACTION_SCREEN_ON))
+			ACanvas.setVisible (false);
+		} else if (intent.getAction().equals(Intent.ACTION_SCREEN_ON))
 		{
-			ACanvas.isVisible = true;
+			ACanvas.setVisible (true);
+			tick(context);
+		}
+		else if (intent.getAction().equals(Intent.ACTION_BATTERY_CHANGED))
+		{
+			int rawlevel = intent.getIntExtra("level", -1);
+            int scale = intent.getIntExtra("scale", -1);
+            int level = -1;
+            if (rawlevel >= 0 && scale > 0) {
+                level = (rawlevel * 100) / scale;
+            }
+            ACanvas.setBatteryLevel (level);
 			tick(context);
 		}
 
